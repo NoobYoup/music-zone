@@ -184,7 +184,8 @@ body {
     background-color: #222;
 }
 
-.detail-song .description {
+.detail-song .description,
+#playlist-detail .detail-song .description {
     flex-grow: 1;
     padding: 10px 20px;
     border-radius: 15px;
@@ -203,4 +204,32 @@ body {
 
 #playlist-detail .info-song:hover .btn__play {
     display: flex;
+}
+
+#playlist-detail .dropdown-playlist-song,
+#profile .dropdown-playlist-song,
+#home .dropdown-playlist-song {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--color-dark-gray);
+    list-style: none;
+    width: max-content;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+#playlist-detail .dropdown-playlist-song li,
+#profile .dropdown-playlist-song li,
+#home .dropdown-playlist-song li {
+    display: flex;
+    padding: 4px 16px 4px 4px;
+}
+
+
+
+#playlist-detail .dropdown-playlist-song li:hover,
+#profile .dropdown-playlist-song li:hover,
+#home .dropdown-playlist-song li:hover {
+    background-color: #999;
 }

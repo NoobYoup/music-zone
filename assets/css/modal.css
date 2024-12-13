@@ -276,6 +276,7 @@ Signup Modal
 .forgot-container .button-forgot-password,
 .edit-profile-container .button-save,
 .edit-song-container .button-save,
+.edit-song-container .button-delete,
 .new-password-container .button-new-password {
     font-size: 1.6rem;
     width: 100%;
@@ -311,10 +312,17 @@ Signup Modal
 }
 
 .login-container .button-forgot:hover,
-.edit-profile-container .button-save:hover {
+.edit-song-container .button-delete:hover {
     background-color: red;
     color: white;
 }
+
+.edit-song-container .button-save:hover,
+.edit-profile-container .button-save:hover {
+    background-color: var(--color-theme);
+}
+
+
 
 .verify-container .code-verify {
     display: flex;
