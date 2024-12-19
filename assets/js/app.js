@@ -418,6 +418,7 @@ const app = {
                     alert('Đăng nhập thành công');
                     loginContainer.style.display = 'none';
                     closeLoginModal();
+                    location.reload(); // Load lại trang web
                 } else {
                     alert('Đăng nhập thất bại: ' + data.message);
                 }
